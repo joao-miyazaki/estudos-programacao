@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-long long memo[100] = {0}; // array de resultados, começa tudo zerado
-
+long long memo[100] = {0}; // uso de ia
 
 long long fibonacci(int numero){
     
@@ -18,11 +17,11 @@ long long fibonacci(int numero){
 
     long long resultado ;
 
-    if (memo[numero] != 0) return memo[numero]; // já calculou, retorna direto
+    if (memo[numero] != 0) return memo[numero]; // uso de ia
 
     resultado = fibonacci(numero-1) + fibonacci(numero-2);
 
-    memo[numero] = resultado;
+    memo[numero] = resultado; // uso de ia
 
     return resultado;
 
